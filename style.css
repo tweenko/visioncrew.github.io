@@ -12,13 +12,30 @@
 	font-size: 100%;
     src: url('fonts/8-bit Operator+ SC Bold.ttf');
 }
-.yellow-underline {
-    text-decoration: underline yellow;
-    text-decoration-thickness: 5px;
-    color: transparent;
+.underline::after {
+    margin: auto;
+	left: 0;
+	right: 0;
+	margin-left: auto; 
+	margin-right: auto;
+    content: "";
+    display: block;
+    width: 600px;
+    border-bottom: 5px solid white;
+    margin-top: 2px;
 }
-
-
+.underline_yellow::after {
+    margin: auto;
+	left: 0;
+	right: 0;
+	margin-left: auto; 
+	margin-right: auto;
+    content: "";
+    display: block;
+    width: 600px;
+    border-bottom: 5px solid yellow;
+    margin-top: 2px;
+}
 .content-container {
     display: flex;
     flex-direction: column;
@@ -130,6 +147,7 @@ a:hover {
     color: yellow;
 }
 body {
+    overflow-x: hidden;
     text-align: center;
     font-family: 'main-reg';
     flex-direction: column;
