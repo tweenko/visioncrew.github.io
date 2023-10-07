@@ -16,11 +16,8 @@
 }
 .logoimage-container{
     line-height: 400px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 .logo-container{
     line-height: 000px;
@@ -30,16 +27,27 @@
     justify-content: center;
     height: 200vh;
 }
-.content-text {
-    font-family: 'main-reg';
-    font-size: 150%;
+.text-bold {
+    font-family: 'main-jve';
+    font-size: 250%;
     text-align: center;
     max-width: 100%;
+    letter-spacing: 1px;
+}
+.text-new {
+    font-family: 'main-jve';
+    font-size: 200%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: red;
+    position: relative;
+    top: 40px;
+    z-index: 1
 }
 .navbar {
     background-color: #347A61;
     overflow: hidden;
-    text-align: center; /* Center-align the text within the navbar */
+    text-align: center;
 }
 
 .navbar a {
@@ -51,7 +59,7 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin: 0 20px; /* Adjust the margin to space out the links */
+    margin: 0 20px;
     transition: color 0.3s;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
 }
@@ -65,10 +73,11 @@
 	margin-right: auto;
 	overflow: hidden;
 	float: center;
-	position: absolute;
 	width: 600px;
 	z-index: 1;
 	visibility: visible;
+    position: relative;
+    transform: translateY(-240px); 
 }
 
 .logoimage{
@@ -84,6 +93,7 @@
 	width: 600px;
 	z-index: 1;
 	visibility: visible;
+    position: relative;
 }
 
 .navbar a:hover {
@@ -94,16 +104,23 @@ body {
     align-items: center;
     justify-content: center;
     background-color: black;
-    color: white; /* This sets the text color to white */
+    color: white;
     text-rendering: pixelated;
     image-rendering: pixelated;
 }
 
 bottom {
-    color: #40554d;
+    color: #6e6e6e;
     font-family: 'main-reg';
     font-size: 50%;
 	vertical-align: bottom;
 	padding-top: 22px;
 	margin-bottom: 22px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
